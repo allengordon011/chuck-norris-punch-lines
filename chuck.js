@@ -7,6 +7,7 @@ var URL = 'https://api.icndb.com/jokes/random'
 
 //rendering functions
 var audio = new Audio('bang.mp3');
+$('#js-name-form').hide();
 
 //event listeners
 //1)image 'button' with AJAX 'get'
@@ -27,6 +28,10 @@ $('#js-fist').on('click', function(){
 		type: 'GET'
 		});
 	});
+$('.js-master').on('click', function(){
+	$('#js-name-form').show();
+});
+
 //2)name input
 $('#js-name-form').on('submit', function(event){
 	event.preventDefault();
@@ -49,6 +54,7 @@ $('#js-name-form').on('submit', function(event){
 		},
 		type: 'GET'
 		});
+	// $('#js-name-form').hide();
 });
 
 //3)new quote input
