@@ -1,5 +1,5 @@
 $(document).ready(function(){
-var URL = "https://api.icndb.com/jokes/random"
+var URL = 'https://api.icndb.com/jokes/random'
 //state object
 
 //state modification
@@ -43,8 +43,8 @@ $('#js-name-form').on('submit', function(event){
 		error: function() {
 			$('#js-quotes').html('<p>Our Kung Fu has encountered an error</p>');
 		},
-		success: function(doj) {
-			$("#js-quotes").html('<p>'+doj.value.joke+'</p>');
+		success: function(data) {
+			$("#js-quotes").html('<p>'+data.value.joke+'</p>');
 			
 		},
 		type: 'GET'
