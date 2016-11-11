@@ -2,7 +2,7 @@ $(document).ready(function() {
     var URL = 'https://api.icndb.com/jokes/random'
     //state object
     var musicPlaying = false;
-
+    var shown = true;
     //state modification
 
 
@@ -32,7 +32,17 @@ $(document).ready(function() {
         });
     });
     $('.js-master').on('click', function() {
-        $('#js-name-form').show();
+        shown = !shown;
+        if(shown) {
+
+        
+        $('#js-name-form').hide();
+         }
+        else {
+        	
+        	$('#js-name-form').show();
+        	
+        }
     });
 
     $('#playButton').on('click', function($) {
