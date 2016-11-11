@@ -1,6 +1,7 @@
 $(document).ready(function() {
     var URL = 'https://api.icndb.com/jokes/random'
-        //state object
+    //state object
+    var musicPlaying = false;
 
     //state modification
 
@@ -33,9 +34,17 @@ $(document).ready(function() {
     $('.js-master').on('click', function() {
         $('#js-name-form').show();
     });
-    $('#playButton').on('click', function() {
-        chuckSong.play();
+
+    $('#playButton').on('click', function($) {
+    	musicPlaying = !musicPlaying;
+    	if(musicPlaying) {
+    		chuckSong.pause();
+    	}
+    	else {
+    		chuckSong.play();
+    	}
     });
+    	
 
     //2)name input
     $('#js-name-form').on('submit', function(event) {
