@@ -7,6 +7,8 @@ var URL = 'https://api.icndb.com/jokes/random'
 
 //rendering functions
 var audio = new Audio('bang.mp3');
+var chuckSong = new Audio('');
+
 $('#js-name-form').hide();
 
 //event listeners
@@ -30,6 +32,9 @@ $('#js-fist').on('click', function(){
 	});
 $('.js-master').on('click', function(){
 	$('#js-name-form').show();
+});
+$('#playButton').on('click' function(){
+	chuckSong.play();
 });
 
 //2)name input

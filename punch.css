@@ -3,20 +3,29 @@
 	box-sizing: border-box;
 }
 
-img{display: inline-block;
-	border-radius:300px; 
-	padding: 10px;
-}
 html {
-/*	margin: 0 auto;
-*/	text-align: center;
-	background-image: url(images/chuck5a.jpg);
+	text-align: center;
+	font-size: 24px;
+	background: url(images/chuck5a.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-	position: fixed;
-	width: 100%;
-	height: 100%;
+}
+body {
+	margin-top: 15%;
+}
+#playButton {
+	display: block;
+	width: 50px;
+	margin-left: 90%;
+	margin-top: -125px;
+}
+
+#js-fist	{
+	display: inline-block;
+	border-radius: 300px; 
+	padding: 10px;
 }
 
 #js-quotes { 
@@ -44,5 +53,6 @@ html {
 #js-name-form {
 	display: block;
 	margin-top: 25px;
+	margin-bottom: 10%;
 }
 
