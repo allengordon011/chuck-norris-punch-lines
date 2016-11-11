@@ -5,5 +5,9 @@ body {
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
-	background-image: url(../images/chuck5a.jpg);
+	background-image: url(images/chuck5a.jpg);
 }
+
+#js-quotes { color:firebrick; font-size:26px; font-weight:800;font-family: 'Alegreya Sans', sans-serif; }
+#js-fist:hover {background-color:rgba(200,0,0,0.3);  }
+
