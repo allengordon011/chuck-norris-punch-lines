@@ -5,3 +5,5 @@ This app is hilarious and interactive. It fetches Chuck Norris jokes, and has an
 - Utilizes an Ajax fetch for JSON data
 - Takes user input to personalize the jokes
 - Has an audio file 'Chuck Song' play/pause option
+
+![app screenshot](Chuck-Screen-Shot.png)
