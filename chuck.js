@@ -1,14 +1,14 @@
 $(document).ready(function() {
     var URL = 'https://api.icndb.com/jokes/random'
-    //state object
-    var musicPlaying = false;
-
+        //state object
+    var musicPlaying = true;
+    var shown = true;
     //state modification
 
 
     //rendering functions
-	var audio = new Audio('bang.mp3');
-	var chuckSong = new Audio('ChuckSong.mp3');
+    var audio = new Audio('./public/bang.mp3');
+    var chuckSong = new Audio('./public/ChuckSong.mp3');
 
     $('#js-name-form').hide();
 
@@ -32,19 +32,23 @@ $(document).ready(function() {
         });
     });
     $('.js-master').on('click', function() {
-        $('#js-name-form').show();
+        shown = !shown;
+        if (shown) {
+            $('#js-name-form').hide();
+        } else {
+            $('#js-name-form').show();
+        }
     });
 
     $('#playButton').on('click', function($) {
-    	musicPlaying = !musicPlaying;
-    	if(musicPlaying) {
-    		chuckSong.pause();
-    	}
-    	else {
-    		chuckSong.play();
-    	}
+        musicPlaying = !musicPlaying;
+        if (musicPlaying) {
+            chuckSong.pause();
+        } else {
+            chuckSong.play();
+        }
     });
-    	
+
 
     //2)name input
     $('#js-name-form').on('submit', function(event) {
