@@ -7,8 +7,8 @@ $(document).ready(function() {
 
 
     //rendering functions
-    var audio = new Audio('bang.mp3');
-    var chuckSong = new Audio('ChuckSong.mp3');
+    var audio = new Audio('./public/bang.mp3');
+    var chuckSong = new Audio('./public/ChuckSong.mp3');
 
     $('#js-name-form').hide();
 
