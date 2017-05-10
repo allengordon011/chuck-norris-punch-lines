@@ -22,10 +22,10 @@ $(document).ready(function() {
                 format: 'json'
             },
             error: function() {
-                $('#js-quotes').html('<p>Our Kung Fu has encountered an error</p>');
+                $('#js-quotes').show().html('<p>Our Kung Fu has encountered an error</p>');
             },
             success: function(doj) {
-                $("#js-quotes").html('<p>' + doj.value.joke + '</p>');
+                $("#js-quotes").show().html('<p>' + doj.value.joke + '</p>');
 
             },
             type: 'GET'
